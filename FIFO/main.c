@@ -114,8 +114,8 @@ void design(struct state_elements_srFIFO * ssrFIFO, _Bool clock, unsigned char d
   srFIFO(ssrFIFO, clock, dataIn, push, pop, &srDataOut, &srFull, &srEmpty);
   rbFIFO(ssrFIFO, clock, dataIn, push, pop, &rbDataOut, &rbFull, &rbEmpty);
   *equal = ((srFull == rbFull) && (ssrFIFO->empty == srbFIFO.empty) && (ssrFIFO->empty || (srDataOut == rbDataOut)));
-  assert(srFull == rbFull);
-  assert(srEmpty == rbEmpty);
+  /*assert(srFull == rbFull);
+  assert(srEmpty == rbEmpty);*/
   assert(*equal == 1);
 }
 

@@ -6,7 +6,7 @@
 unsigned char nondet_uchar();
 _Bool nondet_bool();
 
-struct state_elements_main{
+struct state_elements_main {
   _Bool rx_status_3;
   _Bool rx_status_2;
   _Bool rx_status_1;

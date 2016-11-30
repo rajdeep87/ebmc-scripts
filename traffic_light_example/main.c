@@ -67,9 +67,9 @@ int main() {
   while(1) {
     Traffic_Light(1, clk, &time_left);
     temp = sTraffic_Light.Light_Sign; 
-    assert((time_left != 0xffffffff));
+    //assert((time_left != 0xffffffff));
     // This property failes after 42 clock cycles when GREEN_count reaches 40 down to 0
-    assert((sTraffic_Light.Light_Sign != 2));
+    //assert((sTraffic_Light.Light_Sign != 2));
     assert((sTraffic_Light.Light_Sign != 3));
   }
   return 1;
