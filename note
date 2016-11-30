@@ -1,0 +1,22 @@
+Bounds for SAT statistics::
+===========================
+
+Software bounds:
+----------------
+  Design             Bounds
+  ------             ------
+1> DAIO               >=4
+2> Ibuf               >=1
+3> np-processor       >=1 
+4> TicTacToe          >=10 (multiple assertions)
+5> Traffic_light      >=42 (multiple assertions)
+
+Hardware bounds:
+----------------
+  Design             Bounds
+  ------             ------
+1> DAIO               >=15
+2> Ibuf               >=3
+3> np-processor       >=4 
+4> TicTacToe          >=2 (multiple assertions)
+5> Traffic_light      >=3 (multiple assertions)
